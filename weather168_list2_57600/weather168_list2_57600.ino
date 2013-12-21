@@ -66,21 +66,20 @@ lcd.print(" ");
 lcd.setCursor(6,0);
 lcd.print((char)223);
 lcd.print("C");
-lcd.setCursor(11,0);
+
+lcd.setCursor(10,0);
 lcd.print(int(humidity_SHT20));
-lcd.print("%");
+lcd.print(" %");
 lcd.print("RH");
 
 lcd.setCursor(0,1);
 lcd.print(pressure_BMP);
 lcd.setCursor(6,1);
 lcd.print("kPa");
-lcd.setCursor(14,1);
-lcd.rightToLeft();
+
+lcd.setCursor(10,1);
 lcd.print(lux_BH1750);
-lcd.setCursor(15,1);
-lcd.leftToRight();
-lcd.print("L");
+lcd.print(" L");
  delay(1000);
  
  }
